@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required />
+        </fieldset>
+
+        <fieldset>
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required />
+        </fieldset>
+
+        <fieldset>
+            <label id="number-label">Age</label>
+
+            <input id="number" type="number" min="18" max="120" placeholder="Age" />
+        </fieldset>
+
+
+        <fieldset>
+            <label>Which option best describes your driving style?</label>
+            <select id="dropdown">
+                <option value="slow">Slow</option>
+                <option value="fast">Fast</option>
+            </select>
+        </fieldset>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+
+        <fieldset>
+            <label for="petrol">
+                <input type="radio" id="petrol" value="petrol" name="select" />
+                Petrol
+            </label>
+
+            <label for="diesel">
+                <input type="radio" id="name" value="diesel" name="select" />
+                Diesel
+            </label>
+        </fieldset>
+
+        <p>What is your favorite feature of freeCodeCamp?</p>
+
+        <fieldset>
+            <label for="motorway">
+                <input id="motorway" type="checkbox" value="motorway" />
+                Motorway
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="city">
+                <input id="city" type="checkbox" value="city" />
+                City
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="mixed">
+                <input id="mixed" type="checkbox" value="mixed" />
+                Mixed
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <label>Any comments or suggestions?
+                <textarea></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" id="submit" />
+        </fieldset>
+</body>
